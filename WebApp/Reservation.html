@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url("https://media.istockphoto.com/id/178489146/photo/high-speed-train.jpg?s=612x612&w=0&k=20&c=j9WfvXQYG5IROhtp0tHWExvLlhAUaCqQNYOGnrH8TvA=");
+    background-size: cover;
+	background-position: center;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+form {
+    max-width: 400px;
+    margin-left:690px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color:black;
+}
+
+.in {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+.in:focus,
+.in:active {
+    border-bottom: 2px solid #00f; /* Change to your desired focus border color */
+}
+
+#sub, #res 
+{
+    background-color:blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#res {
+    background-color:blue;
+    margin-left: 10px;
+}
+
+</style>
+</head>
+<body>
+	<form action="Reservation" method="post">
+		<h1>Reservation Page</h1>
+		<br><br>
+		<label>userId : </label>
+		<input type="text" placeholder="Enter userId" name="userId" class="in" required>
+		<br>
+		<label>TrainNumber : </label>
+		<input type="text" placeholder="Enter trainNumber" name="trainNumber" class="in" required>
+		<br>
+		<label>ClassType : </label>
+		<select name="classType" class="in" required>
+            <option>All Classes</option>
+			<option value="AcFirstClass">Ac First Class</option>
+			<option value="AcSecondClass">Ac Second Class</option>
+			<option value="AcThirdClass">Ac Third Class</option>
+			<option value="Sleeper">Sleeper</option>
+			<option value="AcChairCar">Ac Chair Car</option>
+			<option value="SecondSitting">Second Sitting (2s)</option>
+		</select>
+		<br>
+		<label>DateOfJourney : </label>
+		<input type="date" placeholder="Enter dateOfJourney" name="dateOfJourney" class="in" required>
+		<br>
+		<label>sourceLocation : </label>
+		<input type="text" placeholder="Enter sourceLocation" name="sourceLocation" class="in" required>
+		<br>
+		<label>DestinationLocation : </label>
+		<input type="text" placeholder="Enter destinationLocation" name="destinationLocation" class="in" required>
+		<br>
+		<input type="submit" value="Submit" id="sub">
+		<input type="reset" value="Reset" id="res">
+		
+	</form>
+</body>
+</html>

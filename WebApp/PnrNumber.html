@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cancellation Form</title>
+<style >
+/* Add this CSS code to style your Cancellation form */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.ytimg.com/vi/t-EMinSz_Tk/maxresdefault.jpg");
+}
+
+form {
+    max-width: 400px;
+    margin-left:640px;
+    margin-top:280px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+input:focus,
+input:active {
+    border-bottom: 2px solid #00f; /* Change to your desired focus border color */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color:blue;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 600px) {
+    form {
+        margin: 20px auto;
+    }
+}
+
+</style>
+</head>
+<body>
+	<form action="PnrStatus" method="post">
+		<h1>PNR STATUS</h1>
+		<br>
+		<br> <label>PnrNumber : </label>
+		<input type="text" placeholder="Enter pnrNumber" name="pnrNumber">
+		<br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+	</form>
+</body>
+</html>

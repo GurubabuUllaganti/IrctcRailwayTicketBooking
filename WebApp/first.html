@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<style >
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp');
+}
+
+form 
+{
+    max-width: 400px;
+    margin:60px 50px 0px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1
+ {
+    text-align: center;
+    color: #333;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 8px;
+    color:black;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* This removes the default focus outline */
+}
+
+input:focus,
+input:active {
+    border-bottom: 2px solid #00f; /* Change to your desired focus border color */
+}
+
+input[type="submit"]
+ {
+    background-color:blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 160px;
+}
+a
+{
+text-decoration: none;
+margin-left: 140px;
+text-shadow: 1px 2px 3px aqua;
+}
+</style>
+</head>
+<body>
+	<form action="User" method="post">
+		<h1>Sign Up</h1>
+		  <br> <br> <label>Name </label> 
+		  <input type="text" placeholder="Enter Name" name="userName" required>
+		   <br> <br> 
+		  <label>Email </label> 
+		  <input type="email" placeholder="Enter Email" name="email" required>
+		<br> <br><label>Password  </label>
+		 <input type="password" placeholder="********" name="password" required> 
+		 <br> <br>
+		<input type="submit" value="Sign Up">
+		<a href="Login.html">Sign in</a>
+	</form>
+</body>
+</html>
